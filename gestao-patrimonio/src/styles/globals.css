@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --tamanho-fonte-padrao: 16px;
+    --tamanho-fonte-titulo: 35px;
+    --cor-vermelha: #CE2C2C;
+    --cor-fundo: #eef1f5;
+    --cor-texto: #0f172a;
+    --cor-cinza: #9ca3af;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
