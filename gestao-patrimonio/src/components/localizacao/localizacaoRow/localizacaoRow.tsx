@@ -1,22 +1,20 @@
-import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 type Dados = {
     nomeLocal: string; 
     responsavel:  string;
     nomeArea: string; 
 }
 
+type RowProps = {
+    localizacaoRow: Dados;
+    onclick: () => void;
+}
+
 const LocalizacaoRow = ({nomeLocal, responsavel, nomeArea}: Dados) => {
     return( 
-        <tr>
+        <tr onClick={event => onclick()}>
             <td>{nomeLocal}</td>
             <td>{nomeArea}</td>
             <td>{responsavel}</td>
-            <td><a href="#" aria-label="Ver detalhes da Sala 30/31">
-                    <FontAwesomeIcon icon={faCircleInfo} />
-                </a>
-            </td>
         </tr>
     )
 }

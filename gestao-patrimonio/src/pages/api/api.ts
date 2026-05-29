@@ -15,12 +15,13 @@ export const api = axios.create({
 // e um interceptor do axios 
 // ele intercepta (pega) toda requisição antes de ser enviada 
 api.interceptors.request.use((config) => {
-    const token = secureLocalStorage.getItem("Token");
+    const token = secureLocalStorage.getItem("token");
 
-    if(token){
-        config.headers.Authorization = "Bearer" + token;
+     if(token){
+        config.headers.Authorization = "Bearer " + token;
         //config.headers,Authorization = "Bearer ${token}";
     }
+    
     
     return config 
 });

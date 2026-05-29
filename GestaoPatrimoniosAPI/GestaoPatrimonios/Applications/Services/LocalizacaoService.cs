@@ -28,6 +28,7 @@ namespace GestaoPatrimonios.Applications.Services
                 LocalSAP = localizacao.LocalSAP,
                 DescricaoSAP = localizacao.DescricaoSAP,
                 AreaID = localizacao.AreaID,
+                NomeArea = localizacao.Area.NomeArea,
                 Responsavel = localizacao.Usuario.FirstOrDefault()?.Nome
             }).ToList();
         }

@@ -18,7 +18,6 @@ public partial class Localizacao
     public Guid AreaID { get; set; }
 
     public virtual Area Area { get; set; } = null!;
-
     public virtual ICollection<LogPatrimonio> LogPatrimonio { get; set; } = new List<LogPatrimonio>();
 
     public virtual ICollection<Patrimonio> Patrimonio { get; set; } = new List<Patrimonio>();

@@ -10,7 +10,7 @@ export async function login(nif:string, senha: string){
         //console.log(response.data.token);
         const token = response.data.token;
 
-        secureLocalStorage.setItem("Token", token); //vai criar o token, mas nao criptografa(temos q criptografar) entao instalamos o secure local storage
+        secureLocalStorage.setItem("token", token); //vai criar o token, mas nao criptografa(temos q criptografar) entao instalamos o secure local storage
     }
     catch(error: any)
     {

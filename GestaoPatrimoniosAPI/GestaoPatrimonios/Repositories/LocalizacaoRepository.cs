@@ -18,6 +18,7 @@ namespace GestaoPatrimonios.Repositories
         {
             return _context.Localizacao
                 .Include(localizacao => localizacao.Usuario)
+                .Include(localizacao => localizacao.Area)
                 .OrderBy(localizacao =>  localizacao.NomeLocal)
                 .ToList();
         }

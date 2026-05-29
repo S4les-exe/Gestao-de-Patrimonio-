@@ -21,7 +21,7 @@ const Login = () => {
 
             setTimeout(() => {
                 router.push("/lista-ambientes");
-            }, 1000)
+            }, 2000)
         }catch(error: any){
             erro(error.message);
         }
